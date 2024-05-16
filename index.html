@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <style>
+        
+        .captcha-container {
+            text-align: center;
+        
+            justify-content: center;
+            align-items: center;
+         
+            font-family: Arial, sans-serif;
+            margin-top: 40%;
+        }
+        .captcha {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .header{
+            text-align: center;
+            margin-top: 20px;
+            gap: 2rem;
+            background-color: blue;
+            color: white;
+            padding: 1.5rem;
+            
+        }
+        #refresh-btn{
+            padding:2rem;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Generate Captcha</h1>
+    <div class="captcha-container">
+        <div class="captcha" id="captcha"></div>
+        <button id="refresh-btn">Captcha</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
