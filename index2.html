@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        
-    </style>
-</head>
-<body>
-    <form onsubmit="return user()">
+   <link rel="stylesheet" href="./stylesheet2.css">
+  </head>
+  <body>
+    <h1>OUTPUT DISPLAY</h1>
+    <div class="from">
+      <form onsubmit="return user()" class="form-element">
         <label>User Name</label>
-        <input type="text" id="name"><br>
+        <input type="text" id="name" /><br /><br />
         <div>
-            <label>Password</label>
-            <input type="password" id="password"><br>
+          <label>Password</label>
+          <input type="password" id="password" /><br /><br />
         </div>
-        <button type ="submit">Submit</button>
-    </form>
-    <script>
-        function user(){
-            let input =document.getElementById("name").value;
-            let passoword =document.getElementById("password").value;
-            document.write(input+"<br>");
-            document.write(passoword+"<br>");
-            return false;
-        }
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./app2.js">
+      
     </script>
-</body>
+  </body>
 </html>

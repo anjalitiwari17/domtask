@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        .box{
-            width:100px;
-            height: 150px;
-            border: 1px solid black;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box"></div>
-
-    </div>
-    <button id="btn">click me</button>
-    <script>
-        let box =document.querySelector(".box");
-        let button=document.getElementById("btn");
-        const colors =["blue" ,"black" ,"yellow","lightgreen","orange"];
-        let colorIndex=0;
-        button.addEventListener("click",thisIsFun);
-        function thisIsFun(){
-            box.style.backgroundColor=colors[colorIndex];
-            colorIndex=(colorIndex + 1)%colors.length;
-        }
-    </script>
+    <link rel="stylesheet" href="./stylesheet3.css">
+  </head>
+  <body>
+    <div class="main">
     
-</body>
+      <div class="main-2">
+        <h1>COLOR CHANGING BOX</h1>
+    
+          <div class="box"></div>
+        <button id="btn">click me</button>
+      </div>
+    </div>
+    <script src="./app3.js">
+      
+    </script>
+  </body>
 </html>
